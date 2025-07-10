@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+    background: #f6f9ff;
+    padding: 20px;
+}
+
+.wrapper {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.wrapper .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.wrapper .form {
+    width: 100%;
+}
+
+.wrapper .form .inputfield {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .form .inputfield label {
+    width: 200px;
+    color: #444;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.wrapper .form .inputfield .input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .custom_select {
+    position: relative;
+    width: 100%;
+}
+
+.wrapper .form .inputfield .custom_select select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+    outline: none;
+    font-size: 15px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.wrapper .form .check {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 30px;
+    padding-left: 200px;
+}
+
+.wrapper .form .check div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.wrapper .form .check label {
+    color: #444;
+    font-size: 14px;
+}
+
+.wrapper .form .check input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.wrapper .form .inputfield .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background: #4070f4;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.wrapper .form .inputfield .btn:hover {
+    background: #2d5bf1;
+}
+
+.wrapper .result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    padding: 10px;
+    border-radius: 3px;
+    background: #e8f0fe;
+}
+
+@media (max-width: 420px) {
+    .wrapper .form .inputfield {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .wrapper .form .inputfield label {
+        margin-bottom: 5px;
+    }
+    
+    .wrapper .form .check {
+        padding-left: 0;
+    }
+}
